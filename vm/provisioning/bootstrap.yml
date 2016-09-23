@@ -1,0 +1,5 @@
+- hosts: cadastralblockchain
+  user: vagrant
+  sudo: yes
+  roles:
+    - devtools
