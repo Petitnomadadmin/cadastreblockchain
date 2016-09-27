@@ -16,10 +16,6 @@ ZSH_THEME="gnzh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git virtualenv virtualenvwrapper ssh)
 
-# User configuration
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/opt/go/bin:/opt/go-ethereum/build/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 alias py="ipython"
@@ -27,10 +23,5 @@ alias untarbz2="tar xjf"
 alias untargz="tar -zxvf"
 alias untarxz="tar -Jxvf"
 alias unrar="unrar x"
-alias mist="/opt/Ethereum-Wallet-linux32-0-8-1/Ethereum-Wallet"
-
-export GOROOT=/opt/go
-export GOPATH=~/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 setxkbmap fr
