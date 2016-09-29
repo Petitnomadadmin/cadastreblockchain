@@ -6,8 +6,10 @@ Launch VM provisioning and connect through ssh
     cd cadastreblockchain/vm
     vagrant up && vagrant ssh
 
-Trash the VM (from yout host in the vm folder):
+Use folder synchronisation in another prompt if you're in dev mode with no autosync
+    vagran rsync-auto
+
+To trash the VM (from your host in the vm folder):
 
     vagrant halt && vagrant destroy
     rm -rf .vagrant
-
