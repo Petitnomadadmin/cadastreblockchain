@@ -7,7 +7,7 @@ Launch VM provisioning and connect through ssh
     vagrant up && vagrant ssh
 
 Use folder synchronisation in another prompt if you're in dev mode with no autosync
-    vagran rsync-auto
+    vagrant rsync-auto
 
 To trash the VM (from your host in the vm folder):
 
