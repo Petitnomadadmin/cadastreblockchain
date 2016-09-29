@@ -1,0 +1,11 @@
+---
+# tasks file for cadastreblockchain
+# virtualenv -p python3 envname
+
+- name: check virtualenv created
+  stat: path={{ virtualenv_dir }}/{{ venv_name }}
+  register: venv_created
+
+- name: create virtualenv
+  command: chdir={{ virtualenv_dir }} virtualenv -p {{ python_version }} {{ venv_name }}
+  when: not venv_created.stat.exists

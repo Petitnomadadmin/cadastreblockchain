@@ -22,6 +22,9 @@
     - python-pip
 
 - name: Install virtualenvwrapper
+  pip: name=virtualenv
+
+- name: Install virtualenvwrapper
   pip: name=virtualenvwrapper
 
 - name: zsh default shell
