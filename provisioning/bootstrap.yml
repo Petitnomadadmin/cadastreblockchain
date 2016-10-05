@@ -4,3 +4,4 @@
   roles:
     - devtools
     - postgis
+    - cadastreblockchain

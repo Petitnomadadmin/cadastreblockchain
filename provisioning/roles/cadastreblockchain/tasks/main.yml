@@ -10,4 +10,4 @@
   command: chdir={{ virtualenv_dir }} virtualenv -p {{ python_version }} {{ venv_name }}
   when: not venv_created.stat.exists
 
-- command: ./{{ virtualenv_dir }}/{{ venv_name }}/bin/pip install pprint
+- pip: name=django virtualenv={{ virtualenv_dir }}/{{ venv_name }}
