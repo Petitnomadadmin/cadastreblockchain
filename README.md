@@ -3,11 +3,16 @@
 Launch VM provisioning and connect through ssh
 
     git clone git@github.com:Petitnomadadmin/cadastreblockchain.git
-    cd cadastreblockchain/vm
+    cd cadastreblockchain
     vagrant up && vagrant ssh
 
 Use folder synchronisation in another prompt if you're in dev mode with no autosync
+
     vagrant rsync-auto
+
+If you change something in ansible provisioning and you want to provision the vm, run this command as vagrant user:
+
+    cd /vagrant && ansible-playbook /vagrant/provisioning/bootstrap.yml -i /vagrant/provisioning/hosts -vvvv
 
 To trash the VM (from your host in the vm folder):
 
