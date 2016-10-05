@@ -20,6 +20,7 @@
     - gdebi
     - zsh
     - python-pip
+    - language-pack-fr
 
 - name: Install virtualenvwrapper
   pip: name=virtualenv
