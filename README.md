@@ -6,9 +6,14 @@ Launch VM provisioning and connect through ssh
     cd cadastreblockchain
     vagrant up && vagrant ssh
 
-Use folder synchronisation in another prompt if you're in dev mode with no autosync
+Use folder synchronisation in another shell if you're in dev mode with no autosync
 
     vagrant rsync-auto
+
+To start Django server inside the VM
+
+    cd /vagrant/cadastreblockchain
+    ./manage.py runserver 0.0.0.0:8000
 
 If you change something in ansible provisioning and you want to provision the vm, run this command as vagrant user:
 
