@@ -3,11 +3,11 @@
 # virtualenv -p python3 envname
 
 - name: check virtualenv created
-  stat: path={{ virtualenv_dir }}/{{ venv_name }}
+  stat: path={{ venv_dir }}/{{ venv_name }}
   register: venv_created
 
 - name: create virtualenv
-  command: chdir={{ virtualenv_dir }} virtualenv -p {{ python_version }} {{ venv_name }}
+  command: chdir={{ venv_dir }} virtualenv -p {{ python_version }} {{ venv_name }}
   when: not venv_created.stat.exists
 
-- pip: name=django virtualenv={{ virtualenv_dir }}/{{ venv_name }}
+- pip: name=django virtualenv={{ venv_dir }}/{{ venv_name }}
