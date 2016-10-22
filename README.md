@@ -6,9 +6,17 @@ Launch VM provisioning and connect through ssh
     cd cadastreblockchain
     vagrant up && vagrant ssh
 
+Add sync to vagrant
+
+    vagrant plugin install vagrant-rsync-back
+
 Use folder synchronisation in another shell if you're in dev mode with no autosync
 
     vagrant rsync-auto
+
+Use folder sync when folder is created inside the VM
+
+    vagrant rsync-back
 
 To start Django server inside the VM
 
