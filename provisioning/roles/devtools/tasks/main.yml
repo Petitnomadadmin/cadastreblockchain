@@ -21,6 +21,9 @@
     - zsh
     - python-pip
     - language-pack-fr
+    - sqlite3
+    - libsqlite3-dev
+
 
 - name: Install virtualenvwrapper
   pip: name=virtualenv
