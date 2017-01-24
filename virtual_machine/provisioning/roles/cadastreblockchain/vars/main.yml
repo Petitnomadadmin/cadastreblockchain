@@ -1,0 +1,3 @@
+venv_name: cadastreblockchain
+python_version: python3
+venv_dir: /home/vagrant/.virtualenvs
